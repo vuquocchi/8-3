@@ -1,0 +1,15 @@
+html,
+body {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Allura", cursive;
+}
+
+#canvas {
+  overflow: hidden !important;
+  height: 100vh !important;
+  width: 100vw !important;
+}

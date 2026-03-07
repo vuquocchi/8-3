@@ -1,0 +1,62 @@
+.ballon {
+  position: absolute;
+  top: -50px;
+  width: 30px;
+  height: 30px;
+  background: url("../image/flower.png") no-repeat center;
+  background-size: cover;
+  opacity: 1;
+  overflow: hidden;
+}
+
+.sky {
+  position: absolute;
+  top: -50px;
+  width: 30px;
+  height: 30px;
+  background: url("../image/sky.png") no-repeat center;
+  background-size: cover;
+  opacity: 1;
+  overflow: hidden;
+}
+
+.left-fixed,
+.right-fixed {
+  position: absolute;
+  bottom: -250px; /* Đặt cố định gần đáy */
+  width: 100px; /* Đặt kích thước cố định cho ảnh */
+  height: 100px;
+  background: url("../image/sky.png") no-repeat center;
+  background-size: contain; /* Đảm bảo hình ảnh hiển thị gọn gàng */
+}
+
+.left-fixed {
+  left: 50px; /* Cố định bên trái */
+}
+
+.right-fixed {
+  right: 50px; /* Cố định bên phải */
+}
+
+.flying {
+  position: absolute;
+  font-size: 20px;
+  opacity: 1;
+}
+
+@media only screen and (max-width: 767.98px) {
+  .left-fixed {
+    left: 20px; /* Cố định bên trái */
+  }
+
+  .right-fixed {
+    right: 20px; /* Cố định bên phải */
+  }
+
+  .left-fixed,
+  .right-fixed {
+    bottom: -250px; /* Đặt cố định gần đáy */
+    width: 100px; /* Đặt kích thước cố định cho ảnh */
+    height: 100px;
+  }
+}
