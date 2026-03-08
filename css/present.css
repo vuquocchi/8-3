@@ -83,7 +83,10 @@
   opacity: 0.3;
   width: 0;
 }
-
+.present-box{
+-webkit-transform-style: preserve-3d;
+transform-style: preserve-3d;
+}
 .present-box .present {
   position: absolute;
   width: 200px;

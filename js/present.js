@@ -26,20 +26,14 @@ function init() {
     }
   }
 
-  present.addEventListener(
-    "click",
-    function (e) {
-      present.classList.toggle("open");
-      document.getElementById("above-fold").classList.add("above-fold-hidden");
-      document.getElementById("card").classList.add("card-show");
-      // setTimeout(function () {
-      //   document
-      //     .getElementById("above-fold")
-      //     .classList.add("above-fold-hidden");
-      // }, 2000);
-    },
-    false
-  );
+  present.addEventListener("click", openGift);
+present.addEventListener("touchstart", openGift);
+
+function openGift(e){
+  present.classList.toggle("open");
+  document.getElementById("above-fold").classList.add("above-fold-hidden");
+  document.getElementById("card").classList.add("card-show");
+}
 
   nametag.innerText = to;
 }
